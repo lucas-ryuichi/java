@@ -16,17 +16,12 @@ public class App {
         for (int i = 0; i < n - 1; i++) {
             trocaFeita = false;
             for (int j = 0; j < n - 1 - i; j++) {
-                if (vetor[j] < vetor[j + 1]) {
-                   
+                if (vetor[j] < vetor[j + 1]) {  
                     int temp = vetor[j];
                     vetor[j] = vetor[j + 1];
                     vetor[j + 1] = temp;
                     trocaFeita = true;
                 }
-               
-
-
-           
             if (!trocaFeita) {
                 break;
             }
@@ -37,10 +32,6 @@ public class App {
             separador = ", ";
         }
         System.out.println();
-
-
-       
-       
         }
          System.out.println(" -- vetor em ordem inversa --");
          for(int i = n - 1; i>=0; i--){
@@ -61,6 +52,5 @@ public class App {
         System.out.println();
         System.out.println("A soma dos valores é " + somar);
         }
-
     }
 
